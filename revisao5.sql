@@ -39,3 +39,20 @@ select * from tb_vendas;
 
 select tb_vendas.cod_vendas, tb_vendas.valor, tb_vendedores.nome_vendedor from tb_vendas, tb_vendedores where tb_vendas.cod_vendedor = tb_vendedores.cod_vendedor;
 
+select sum(valor);
+select sum(valor) from tb_vendas where cod_vendedor=1;
+
+select count(*) from tb_vendas;
+select count(*) from tb_vendas where cod_vendedor=1;
+
+select min(valor) from tb_vendas;
+select min(valor) from tb_vendas where cod_vendedor=1;
+
+select max(valor) from tb_vendas;
+select max(valor) from tb_vendas where cod_vendedor=1;
+
+select avg(valor) from tb_vendas;
+select avg(valor) from tb_vendas where cod_vendedor=1;
+
+select distinct cod_vendedor from tb_vendas;
+
